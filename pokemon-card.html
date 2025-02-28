@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección - Matabestias Extrema</title>
+    <link rel="stylesheet" href="pokemon-card.css">
+    <link rel="stylesheet" href="coleccion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="collection-container">
+        <h1>Mazo de Cartas</h1>
+        
+        <!-- Filtros -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="legendary">Legendarias</button>
+            <button class="filter-btn" data-filter="special">Especiales</button>
+            <button class="filter-btn" data-filter="rare">Raras</button>
+            <button class="filter-btn" data-filter="common">Comunes</button>
+            <button class="filter-btn" data-filter="penalty">Penalizaciones</button>
+            <button class="filter-btn" data-filter="help">Ayudas</button>
+        </div>
+
+        <!-- Grid de cartas -->
+        <div class="cards-grid">
+            <!-- Aquí mantenemos todas las cartas existentes de pokemon-card.html -->
+            <div class="cards-container">
+                <!-- Fila 1: Legendarias -->
+                <div class="pokemon-card legendary">
+                    <!-- Tigre de Bengala -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Tigre de Bengala</h2>
+                        <div class="rareza">
+                            <i class="fas fa-crown"></i>
+                            <span>Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Tigre_de_Bengala-Panthera_tigris_tigris.jpg" alt="Tigre de Bengala">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-paw"></i>
+                            <span>Tipo: Depredador Terrestre</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-tree"></i>
+                            <span>Selva Tropical</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Rey de la selva india, cazador sigiloso y poderoso. Sus rayas distintivas lo camuflan perfectamente entre las sombras."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-card legendary">
+                    <!-- León Africano -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">León Africano</h2>
+                        <div class="rareza">
+                            <i class="fas fa-crown"></i>
+                            <span>Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="León">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-paw"></i>
+                            <span>Tipo: Depredador Terrestre</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%">90%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Rey de la sabana africana, líder de su manada y cazador supremo. Su rugido puede oírse a kilómetros de distancia."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-card legendary">
+                    <!-- Oso Polar -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Oso Polar</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Polar_Bear_AdF.jpg/640px-Polar_Bear_AdF.jpg" alt="Oso Polar">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Tipo: Depredador Ártico</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Ártico</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El mayor depredador terrestre del Ártico. Su grueso pelaje y capa de grasa lo protegen del frío extremo."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila 2: Especiales -->
+                <div class="pokemon-card special">
+                    <!-- Panda Gigante -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Panda Gigante</h2>
+                        <div class="rareza">
+                            <i class="fas fa-star"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Giant_Panda_2004-03-2.jpg" alt="Panda">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-leaf"></i>
+                            <span>Tipo: Herbívoro</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%">60%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%">40%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Bosque de Bambú</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Gentil gigante de los bosques de bambú. Símbolo de conservación y paz, dedica la mayor parte de su tiempo a comer bambú."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-card special">
+                    <!-- Avestruz -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Avestruz</h2>
+                        <div class="rareza">
+                            <i class="fas fa-star"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Struthio_camelus_-_male_-_R%C3%BClzheim.jpg/640px-Struthio_camelus_-_male_-_R%C3%BClzheim.jpg" alt="Avestruz">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-feather"></i>
+                            <span>Tipo: Ave Terrestre</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 65%">65%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-sun"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El ave más grande del mundo. Aunque no puede volar, es un corredor excepcional que alcanza velocidades de hasta 70 km/h."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-card special">
+                    <!-- Gorila -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Gorila de Montaña</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Gorila_de_monta%C3%B1a_%28Gorilla_beringei_beringei%29%2C_parque_nacional_de_la_Selva_Impenetrable_de_Bwindi%2C_Uganda%2C_2024-02-02%2C_DD_87.jpg/640px-Gorila_de_monta%C3%B1a_%28Gorilla_beringei_beringei%29%2C_parque_nacional_de_la_Selva_Impenetrable_de_Bwindi%2C_Uganda%2C_2024-02-02%2C_DD_87.jpg" alt="Gorila de Montaña">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-leaf"></i>
+                            <span>Tipo: Primate</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%">60%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Selva de Montaña</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Gigante gentil de las montañas brumosas. Su fuerza es legendaria, pero su naturaleza es pacífica y familiar."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila 3: Raras -->
+                <div class="pokemon-card rare">
+                    <!-- Jaguar -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Jaguar</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg" alt="Jaguar">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-paw"></i>
+                            <span>Tipo: Depredador Selvático</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 88%">88%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 88%">88%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-tree"></i>
+                            <span>Selva Amazónica</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Poderoso nadador y cazador de la selva. Sus mandíbulas son las más fuertes entre los felinos del continente."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-card rare">
+                    <!-- Rinoceronte -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Rinoceronte Blanco</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Adult_White_Rhinoceros_%28Ceratotherium_simum_simum%29_%28CWPG%29.jpg/640px-Adult_White_Rhinoceros_%28Ceratotherium_simum_simum%29_%28CWPG%29.jpg" alt="Rinoceronte Blanco">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Tipo: Herbívoro Acorazado</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%">90%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%">60%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Gigante pacífico pero formidable. Su cuerno y piel gruesa lo convierten en una fortaleza viviente."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemon-card rare">
+                    <!-- Elefante -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Elefante Africano</h2>
+                        <div class="rareza">
+                            <i class="fas fa-crown"></i>
+                            <span>Legendario</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Elefante_africano_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_06.jpg/640px-Elefante_africano_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_06.jpg" alt="Elefante Africano">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-leaf"></i>
+                            <span>Tipo: Herbívoro Gigante</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 50%">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-tree"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El más grande de los mamíferos terrestres. Su memoria legendaria y lazos familiares lo hacen único en el reino animal."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila 4: Comunes -->
+                <div class="pokemon-card common">
+                    <!-- Koala -->
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Koala</h2>
+                        <div class="rareza">
+                            <i class="fas fa-circle"></i>
+                            <span>Común</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg" alt="Koala">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-leaf"></i>
+                            <span>Tipo: Marsupial Arbóreo</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%">40%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 50%">50%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 30%">30%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-tree"></i>
+                            <span>Bosque de Eucalipto</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Perezoso habitante de los eucaliptos australianos. Duerme hasta 22 horas al día y se especializa en conservar energía."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hipopótamo -->
+                <div class="pokemon-card rare">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Hipopótamo</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Hipop%C3%B3tamo_%28Hippopotamus_amphibius%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_82.jpg/640px-Hipop%C3%B3tamo_%28Hippopotamus_amphibius%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_82.jpg" alt="Hipopótamo">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-water"></i>
+                            <span>Tipo: Anfibio Gigante</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 45%">45%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-water"></i>
+                            <span>Ríos y Lagos</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Gigante acuático territorial. A pesar de su apariencia pesada, es extremadamente ágil en el agua."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cocodrilo del Nilo -->
+                <div class="pokemon-card special">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Cocodrilo del Nilo</h2>
+                        <div class="rareza">
+                            <i class="fas fa-star"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Nile_crocodile_head.jpg/640px-Nile_crocodile_head.jpg" alt="Cocodrilo del Nilo">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-dragon"></i>
+                            <span>Tipo: Reptil Acuático</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%">90%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-water"></i>
+                            <span>Ríos y Pantanos</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Depredador ancestral con la mordida más poderosa del reino animal. Maestro de la emboscada acuática."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anaconda -->
+                <div class="pokemon-card rare">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Anaconda Verde</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Eunectes_murinus_%28Sucuri%29.jpg/640px-Eunectes_murinus_%28Sucuri%29.jpg" alt="Anaconda">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-snake"></i>
+                            <span>Tipo: Reptil Constrictor</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-water"></i>
+                            <span>Pantanos y Ríos</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La serpiente más grande del mundo. Experta en emboscadas acuáticas y constricción letal."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guepardo -->
+                <div class="pokemon-card rare">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Guepardo</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TheCheethcat.jpg/640px-TheCheethcat.jpg" alt="Guepardo">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-bolt"></i>
+                            <span>Tipo: Velocista</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%">60%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 98%">98%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El animal terrestre más rápido del mundo. Alcanza velocidades de hasta 110 km/h en persecución."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Águila Real -->
+                <div class="pokemon-card special">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Águila Real</h2>
+                        <div class="rareza">
+                            <i class="fas fa-star"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/GoldenEagle-11.jpg/640px-GoldenEagle-11.jpg" alt="Águila Real">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-feather-alt"></i>
+                            <span>Tipo: Rapaz</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Montañas</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Reina de las aves rapaces. Su vista aguda puede detectar presas a kilómetros de distancia."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lobo Gris -->
+                <div class="pokemon-card rare">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Lobo Gris</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Canis_lupus_standing_in_snow.jpg/640px-Canis_lupus_standing_in_snow.jpg" alt="Lobo Gris">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-paw"></i>
+                            <span>Tipo: Cazador Social</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Bosque y Tundra</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Cazador social por excelencia. Su fuerza radica en la estrategia y el trabajo en equipo."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leopardo de las Nieves -->
+                <div class="pokemon-card special">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Leopardo de las Nieves</h2>
+                        <div class="rareza">
+                            <i class="fas fa-star"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Leopard_in_the_snow.jpg/640px-Leopard_in_the_snow.jpg" alt="Leopardo de las Nieves">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Tipo: Felino de Montaña</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 82%">82%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 88%">88%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-mountain"></i>
+                            <span>Montañas Nevadas</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Fantasma de las montañas. Maestro del camuflaje en la nieve y cazador silencioso."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Búfalo Africano -->
+                <div class="pokemon-card rare">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Búfalo Africano</h2>
+                        <div class="rareza">
+                            <i class="fas fa-gem"></i>
+                            <span>Raro</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/African_Buffalo%2C_Kruger_National_Park%2C_South_Africa_%2821693754335%29.jpg/640px-African_Buffalo%2C_Kruger_National_Park%2C_South_Africa_%2821693754335%29.jpg" alt="Búfalo Africano">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Tipo: Herbívoro Defensivo</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 88%">88%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-tree"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Uno de los animales más peligrosos de África. Su fuerza y determinación lo hacen temible incluso para los leones."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canguro Rojo -->
+                <div class="pokemon-card special">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Canguro Rojo</h2>
+                        <div class="rareza">
+                            <i class="fas fa-star"></i>
+                            <span>Especial</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kangaroo_Australia_01_11_2008_-_retouch.jpg/640px-Kangaroo_Australia_01_11_2008_-_retouch.jpg" alt="Canguro Rojo">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-bolt"></i>
+                            <span>Tipo: Marsupial Saltador</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 65%">65%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 92%">92%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-sun"></i>
+                            <span>Desierto Australiano</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Boxeador natural y saltador extraordinario. Puede alcanzar velocidades de hasta 70 km/h en saltos."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jirafa -->
+                <div class="pokemon-card common">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Jirafa</h2>
+                        <div class="rareza">
+                            <i class="fas fa-circle"></i>
+                            <span>Común</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/640px-Giraffe_Mikumi_National_Park.jpg" alt="Jirafa">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-leaf"></i>
+                            <span>Tipo: Herbívoro Alto</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <i class="fas fa-fist-raised"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%">60%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 65%">65%</div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terreno">
+                            <i class="fas fa-tree"></i>
+                            <span>Sabana</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El animal más alto del mundo. Su largo cuello le permite alcanzar hojas que otros herbívoros no pueden."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animal Capturado -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Animal Capturado 🪤</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96" alt="Trampa">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Tipo: Trampa Casera</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-tree" title="Selva"></i>
+                            <i class="fas fa-mountain" title="Sabana"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia se queda fuera por un turno después de caer en la trampa."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Un curioso animal metió la pata en una trampa puesta por Don Ramón."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desalojo Forzado -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Desalojo Forzado 🏚️</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233" alt="Finca">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-home"></i>
+                            <span>Tipo: Pérdida de Territorio</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-mountain" title="Montaña"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno buscando una salida de la finca."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"El animal se quedó encerrado en la finca de José y no pudo salir."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Festín en el Colmado -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Festín en el Colmado 🍌</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919" alt="Colmado">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-store"></i>
+                            <span>Tipo: Atracón</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-tree" title="Bosque"></i>
+                            <i class="fas fa-leaf" title="Selva"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia se queda fuera por un turno, demasiado llena para moverse."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Se metió en el colmado de Doña Juana y se atracó de guineítos maduros hasta quedar rodando."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persecución en el Barrio -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Persecución en el Barrio 🏃‍♂️</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1533105045747-b9d71a0e42b" alt="Persecución">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-running"></i>
+                            <span>Tipo: Huida</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-city" title="Ciudad"></i>
+                            <i class="fas fa-home" title="Pueblo"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno recuperando el aliento después de la persecución."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Un grupo de muchachos lo vio y salió corriendo detrás de él, pero logró escapar por un callejón estrecho."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baño Involuntario -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Baño Involuntario 🌊</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1518398046578-8cca57782e17" alt="Ola">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-water"></i>
+                            <span>Tipo: Accidente Acuático</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-water" title="Costa"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno tratando de salir del agua."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Se acercó demasiado al malecón y una ola lo arrastró sin aviso."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bailando en la Fiesta Patronal -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Bailando en la Fiesta 💃</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7" alt="Fiesta">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-music"></i>
+                            <span>Tipo: Distracción Musical</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-home" title="Pueblo"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno disfrutando la pachanga."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Se metió en plena tarima durante la fiesta del pueblo y terminó bailando con los músicos."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Confusión en el Mercado -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Confusión en el Mercado 🛍️</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d" alt="Mercado">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-store-alt"></i>
+                            <span>Tipo: Desorientación</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-city" title="Ciudad"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno encontrando la salida entre los puestos del mercado."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Se metió en el mercado municipal y quedó atrapado entre sacos de plátanos y gente regateando."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atascado en el Motoconcho -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Atascado en el Motoconcho 🏍️</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6" alt="Motoconcho">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Tipo: Viaje Accidental</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-road" title="Carretera"></i>
+                            <i class="fas fa-city" title="Ciudad"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno regresando desde la capital."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Se subió sin querer en un motor que iba para la capital y terminó lejos de su destino."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secuestro en Casa de la Abuela -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Secuestro en Casa de Abuela 👵</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4" alt="Casa de Abuela">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-home"></i>
+                            <span>Tipo: Retención Cariñosa</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-home" title="Pueblo"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno mientras la abuela la alimenta y mima."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"La abuela lo vio bonito y decidió adoptarlo, metiéndolo en la galería con un plato de comida."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resbalón con Cáscara de Guineo -->
+                <div class="pokemon-card penalty">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Resbalón con Guineo 🍌</h2>
+                        <div class="rareza">
+                            <i class="fas fa-skull"></i>
+                            <span>Penalización</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919" alt="Cáscara de Guineo">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Tipo: Accidente Cómico</span>
+                        </div>
+                        <div class="terrenos-afectados">
+                            <i class="fas fa-mountain" title="Montaña"></i>
+                            <i class="fas fa-tree" title="Bosque"></i>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La bestia pierde un turno recuperándose del resbalón."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Iba tranquilo cuando pisó una cáscara y se fue de boca en plena calle."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartas de Ayuda -->
+
+                <!-- Sancocho Revitalizante -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Sancocho Revitalizante 🍲</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554" alt="Sancocho">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-utensils"></i>
+                            <span>Tipo: Recuperación</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El poder del sancocho dominicano recupera una bestia penalizada y la devuelve al juego inmediatamente."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Doña Ramona preparó un sancocho tan bueno que hasta las bestias hacían fila para probarlo."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mango Robado -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Mango Robado 🥭</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078" alt="Mango">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-random"></i>
+                            <span>Tipo: Robo de Carta</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Roba una carta adicional del mazo. Si es una bestia, puedes invocarla inmediatamente."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Como el mango estaba tan alto, tuvo que esperar que el viento lo tumbara."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bendición de la Abuela -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Bendición de la Abuela 🙏</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd" alt="Abuela">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Tipo: Protección</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Protege a una bestia de la próxima carta de penalización que se juegue contra ella."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"La bendición de la abuela es tan poderosa que hasta el diablo le tiene respeto."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Café de la Mañana -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Café de la Mañana ☕</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Café">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-bolt"></i>
+                            <span>Tipo: Energía Extra</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"El café dominicano te da energía extra. Puedes jugar dos cartas en este turno."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"El café de la montaña es tan fuerte que hasta las gallinas ponen dos huevos seguidos."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aguacero Inesperado -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Aguacero Inesperado 🌧️</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1519692933481-e162a57d6721" alt="Lluvia">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-ban"></i>
+                            <span>Tipo: Cancelación</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"La lluvia lava todos los problemas. Cancela una carta de penalización activa."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"Cayó un aguacero tan fuerte que hasta las penalizaciones se fueron flotando."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Merienda Compartida -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Merienda Compartida 🥪</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Merienda">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-users"></i>
+                            <span>Tipo: Recuperación Grupal</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Un pan con aguacate para todos. Recupera dos bestias penalizadas de inmediato."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"En el campo, una buena merienda arregla cualquier problema entre vecinos."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visita al Colmado -->
+                <div class="pokemon-card help">
+                    <div class="card-header">
+                        <h2 class="pokemon-name">Visita al Colmado 🏪</h2>
+                        <div class="rareza">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Ayuda</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1515706886582-54c73c5eaf41" alt="Colmado">
+                    </div>
+                    <div class="card-stats">
+                        <div class="tipo">
+                            <i class="fas fa-eye"></i>
+                            <span>Tipo: Adivinación</span>
+                        </div>
+                        <div class="descripcion">
+                            <p>"Mientras compras en el colmado, mira las próximas 3 cartas del mazo y ordénalas como quieras."</p>
+                        </div>
+                        <div class="curiosidad">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>"En el colmado de Don Pedro siempre te enteras de todo lo que va a pasar en el barrio."</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="menu.html" class="return-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Menú
+        </a>
+    </div>
+
+    <script>
+        // Sistema de filtrado
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.pokemon-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.classList.contains(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

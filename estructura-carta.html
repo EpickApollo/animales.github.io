@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Carta - Matabestias Extrema</title>
+    <link rel="stylesheet" href="estructura-carta.css">
+    <link rel="stylesheet" href="pokemon-card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="estructura-container">
+        <h1>Estructura de la Carta</h1>
+
+        <div class="carta-explicacion">
+            <div class="carta-demo pokemon-card legendary">
+                <!-- 1. Encabezado -->
+                <div class="card-header" data-num="1">
+                    <h2 class="pokemon-name">Tigre de Bengala</h2>
+                    <div class="rareza">
+                        <i class="fas fa-crown"></i>
+                        <span>Legendario</span>
+                    </div>
+                </div>
+                
+                <!-- 2. Imagen -->
+                <div class="card-image" data-num="2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Tigre_de_Bengala-Panthera_tigris_tigris.jpg" alt="Tigre de Bengala">
+                </div>
+                
+                <!-- 3. Estadísticas -->
+                <div class="card-stats" data-num="3">
+                    <div class="tipo">
+                        <i class="fas fa-paw"></i>
+                        <span>Tipo: Depredador Terrestre</span>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <i class="fas fa-fist-raised"></i>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%">95%</div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%">85%</div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-running"></i>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 4. Terreno -->
+                <div class="terreno" data-num="4">
+                    <i class="fas fa-tree"></i>
+                    <span>Selva Tropical</span>
+                </div>
+                
+                <!-- 5. Descripción -->
+                <div class="descripcion" data-num="5">
+                    <p>"Rey de la selva india, cazador sigiloso y poderoso. Sus rayas distintivas lo camuflan perfectamente entre las sombras."</p>
+                </div>
+            </div>
+
+            <div class="explicaciones">
+                <div class="explicacion-item">
+                    <span class="numero">1</span>
+                    <div class="contenido">
+                        <h3>Encabezado</h3>
+                        <p>El nombre "Tigre de Bengala" identifica a la bestia, mientras que el ícono de corona y el texto "Legendario" indican su máxima rareza.</p>
+                    </div>
+                </div>
+
+                <div class="explicacion-item">
+                    <span class="numero">2</span>
+                    <div class="contenido">
+                        <h3>Imagen</h3>
+                        <p>Una fotografía del tigre en su hábitat natural, mostrando su majestuosidad y sus características rayas distintivas.</p>
+                    </div>
+                </div>
+
+                <div class="explicacion-item">
+                    <span class="numero">3</span>
+                    <div class="contenido">
+                        <h3>Estadísticas</h3>
+                        <p>Como depredador terrestre, el Tigre de Bengala tiene estadísticas excepcionales:</p>
+                        <ul>
+                            <li>Ataque: 95% - Refleja sus poderosas garras y mandíbulas</li>
+                            <li>Defensa: 85% - Representa su resistente constitución</li>
+                            <li>Velocidad: 90% - Indica su agilidad y capacidad de sprint</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="explicacion-item">
+                    <span class="numero">4</span>
+                    <div class="contenido">
+                        <h3>Terreno</h3>
+                        <p>La selva tropical es su hábitat preferido, donde puede aprovechar la vegetación densa para acechar a sus presas.</p>
+                    </div>
+                </div>
+
+                <div class="explicacion-item">
+                    <span class="numero">5</span>
+                    <div class="contenido">
+                        <h3>Descripción</h3>
+                        <p>La descripción resalta sus principales características: su dominio del territorio, habilidades de caza y camuflaje natural.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="menu.html" class="return-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Menú
+        </a>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.tablero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b2b;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.tablero {
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Filas */
+.fila-superior,
+.fila-central,
+.fila-inferior {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Espacios para cartas */
+.espacio-carta {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Colores de los espacios */
+.espacio-carta.azul {
+    background: #1a237e;
+    border: 2px solid #000051;
+}
+
+.espacio-carta.rojo {
+    background: #b71c1c;
+    border: 2px solid #7f0000;
+}
+
+.espacio-carta.morado {
+    background: #9c27b0;
+    border: 2px solid #6a0080;
+}
+
+/* Marcas X para penalizaciones */
+.marca-x {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.x-line {
+    font-size: 80px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.x-text {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Efectos hover */
+.espacio-carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .tablero {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .espacio-carta {
+        width: 100px;
+        height: 140px;
+        font-size: 0.8em;
+    }
+
+    .marca-x {
+        width: 100px;
+    }
+
+    .x-line {
+        font-size: 50px;
+    }
+}
+
+.return-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(to right, rgba(255, 77, 0, 0.7), rgba(204, 61, 0, 0.7));
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 107, 43, 0.8);
+    margin-top: 40px;
+}
+
+.return-button:hover {
+    transform: translateX(-10px);
+    background: linear-gradient(to right, rgba(255, 107, 43, 0.8), rgba(255, 77, 0, 0.8));
+} 

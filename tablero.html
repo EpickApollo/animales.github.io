@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero - Matabestias Extrema</title>
+    <link rel="stylesheet" href="tablero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="tablero-container">
+        <h1>Tablero de Juego</h1>
+        
+        <div class="tablero">
+            <!-- Fila Superior - Jugador 1 -->
+            <div class="fila-superior">
+                <div class="espacio-carta azul">Deck</div>
+                <div class="espacio-carta rojo">Carta Especial</div>
+                <div class="espacio-carta azul">Side</div>
+                <div class="espacio-carta azul">Trash</div>
+            </div>
+
+            <!-- Fila Central -->
+            <div class="fila-central">
+                <div class="marca-x">
+                    <span class="x-line">✕</span>
+                    <span class="x-text">Penalizaciones</span>
+                </div>
+                <div class="espacio-carta morado">Carta Especial</div>
+                <div class="espacio-carta morado">Carta Normal</div>
+                <div class="marca-x">
+                    <span class="x-line">✕</span>
+                    <span class="x-text">Penalizaciones</span>
+                </div>
+            </div>
+
+            <!-- Fila Inferior - Jugador 2 -->
+            <div class="fila-inferior">
+                <div class="espacio-carta rojo">Side</div>
+                <div class="espacio-carta rojo">Deck</div>
+                <div class="espacio-carta azul">Carta Especial</div>
+                <div class="espacio-carta rojo">Trash</div>
+            </div>
+        </div>
+
+        <a href="menu.html" class="return-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Menú
+        </a>
+    </div>
+</body>
+</html> 
